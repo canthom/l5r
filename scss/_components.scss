@@ -328,7 +328,7 @@
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
-  transition: all .2s;
+  transition: transform .2s;
 
   & span {
     margin-left: 3px;
@@ -448,9 +448,22 @@
   background-color: #fff;
   box-shadow: var(--shadow-light);
   padding: 3rem;
-  margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden;
+  height: 100%;
+
+  button {
+    margin-top: 1.5rem;
+    position: relative;
+    right: 0;
+  }
+
+  h3 {
+    z-index: 2;
+    position: relative;
+    text-align: right;
+    margin-bottom: 1rem;
+  }
 
   @media only screen and (max-width: $bp-medium) {
     padding: 2rem;
@@ -513,7 +526,7 @@
 ////////////////////////////////////
 // Call to Action
 .cta {
-  padding: 3.5rem 0;
+  padding: 3rem 0;
   text-align: center;
 
   @media only screen and (max-width: $bp-medium) {
@@ -531,49 +544,228 @@
 ////////////////////////////////////
 // Button CTA
 .btn {
+  display: inline-block;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
+  padding: 1.2rem 3.5rem;
   border: none;
   border-radius: 100px;
-  background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
-  color: #fff;
+  transition: all .2s;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
 
-  & > * {
-    display: inline-block;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+    &::after {
+      transform: scaleY(1.6) scaleX(1.4);
+      opacity: 0;
+    }
+  }
+
+  &:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+  &-cta {
+    background-image: 
+    linear-gradient(to right, 
+    var(--color-primary-light), 
+    var(--color-primary-dark));
+    color: #fff;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all .4s;
+      background-image: 
+      linear-gradient(to right, 
+      var(--color-primary-light), 
+      var(--color-primary-dark));
+    }
+  }
+}
+
+////////////////////////////////////
+// Showcase
+.showcase {
+  height: 350px;
+  background: url('../img/showcase.jpg') no-repeat center center / cover;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
-    transition: all .2s;
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
-  &__visible {
-    padding: 2rem 7.5rem;
-  }
-
-  &:hover {
-    background-image: linear-gradient(to left, var(--color-primary-light), var(--color-primary-dark));
-  }
-
-  &__invisible {
+  &__text-box {
     position: absolute;
-    padding: 2rem 0;
-    left: 0;
-    top: -100%;
+    left: 6rem;
+    bottom: 5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 400;
+    }
+
+    .btn {
+      margin-top: 2.5rem;
+    }
+  }
+}
+
+// Newsfeed
+.news {
+  &__article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3.5rem;
+
+
+    &-title {
+      flex: 0 0 77.5%;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #000;
+    }
+
+    &-title:hover,
+    &-info a:hover {
+      color: var(--color-primary) !important;
+    }
+
+    &-category {
+      flex: 1;
+      padding: .2rem;
+      font-size: 1.2rem;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+      text-transform: uppercase;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &-info {
+      display: flex;
+      font-size: 1.3rem;
+
+      &-author,
+      &-date {
+        &::after {
+          content: '\002D';
+          margin: 0 .8rem;
+        }
+      }
+    }
+  }
+}
+
+// Pagination
+.news-pages {
+  display: inline-flex;
+  overflow: hidden;
+
+  li {
+    &:hover a {
+      background-color: #ccc;
+    }
+
+    &:first-of-type a {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      margin-left: 0;
+    }
+
+    &:nth-of-type(6) {
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: .5rem 1rem;
+    }
+
+    &:last-of-type a {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    a {
+      display: block;
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      border: 1px solid #ccc;
+      padding: .5rem 1rem;
+      margin-left: -1px;
+    }
+
+    &.page-active {  
+      a {
+        color: #fff;
+        border-color: var(--color-primary);
+        background-color: var(--color-primary);
+      }
+    }
+  }
+}
+
+////////////////////////////////////
+// Planning
+.planning {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+
+  h4 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: #000;
   }
 
-  &:hover &__visible {
-    transform: translateY(100%);
-  }
-
-  &:hover &__invisible {
-    top: 0;
-  }
-
-  &:focus {
-    outline: none;
-    animation: pulsate 1s infinite;
+  &__list {
+    &-item {
+      & a:hover {
+        color: var(--color-primary);
+      }
+      
+      &-date {
+        &::after {
+          content: '\002D';
+          margin: 0 .5rem;
+        }
+      }
+    }
   }
 }

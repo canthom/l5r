@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Links -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+
+  <!-- Title -->
+  <title>Trillo &mdash; An L5R Fan Site</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html"><img src="./img/logo.png" alt="Trillo Logo" class="logo" /></a>
+
+      <form action="#" class="search">
+        <input type="text" class="search__input" placeholder="Rechercher" />
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="user-nav">
+        <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+          </svg>
+          <span class="user-nav__notification">7</span>
+        </div>
+
+        <!-- <div class="user-nav__icon-box">
+          <svg class="user-nav__icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span class="user-nav__notification">13</span>
+        </div> -->
+
+        <div class="user-nav__user">
+          <img src="./img/halion.jpg" alt="User Photo" class="user-nav__user-photo" />
+          <span class="user-nav__user-name">Halion</span>
+        </div>
+      </nav>
+    </header>
+
+    <div class="content">
+      <nav class="sidebar">
+        <ul class="side-nav">
+          <li class="side-nav__item side-nav__item--active">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-home"></use>
+              </svg>
+              <span>Accueil</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-open-book"></use>
+              </svg>
+              <span>Fictions</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-documents"></use>
+              </svg>
+              <span>Le Jeu de Cartes</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-pencil"></use>
+              </svg>
+              <span>Le Jeu de Rôle</span>
+            </a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">
+              <svg class="side-nav__icon">
+                <use xlink:href="img/sprite.svg#icon-dice"></use>
+              </svg>
+              <span>Le Jeu de Plateau</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="legal">
+          <p>&copy; 2020 par Toma.dev</p>
+          <p>Tous droits réservés.</p>
+        </div>
+      </nav>
+
+      <main class="hotel-view">
+        <!-- Gallery -->
+        <div class="gallery">
+          <figure class="gallery__item">
+            <img src="./img/unicorn/1. Golden Plains Outpost.jpg" alt="GPO" class="gallery__photo">
+          </figure>
+          <figure class="gallery__item">
+            <img src="./img/unicorn/2. Hisu Mori Toride.jpg" alt="HMT" class="gallery__photo">
+          </figure>
+          <figure class="gallery__item">
+            <img src="./img/unicorn/3. Shiro Shinjo.jpg" alt="Shiro Shinjo" class="gallery__photo">
+          </figure>
+        </div>
+
+        <!-- Overview -->
+        <div class="overview">
+          <h1 class="overview__heading">Clan de la Licorne</h1>
+          <div class="overview__stars">
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+            <svg class="overview__icon-star">
+              <use xlink:href="img/sprite.svg#icon-star"></use>
+            </svg>
+          </div>
+
+          <div class="overview__location">
+            <svg class="overview__icon-location">
+              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+            </svg>
+            <button class="btn-inline">Rokugan</button>
+          </div>
+
+          <div class="overview__rating">
+            <div class="overview__rating-average">8.6</div>
+            <div class="overview__rating-count">429 votes</div>
+          </div>
+        </div>
+
+        <div class="detail">
+          <div class="description">
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente
+              saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
+            </p>
+            <p class="paragraph">
+              Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure
+              aliquid aliquam.
+            </p>
+            <ul class="list">
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+              <li class="list__item">Lorem ipsum dolor sit.</li>
+            </ul>
+
+            <div class="recommend">
+              <p class="recommend__count">
+                Shono et 3 autres amis recommandent ce clan.
+              </p>
+              <img src="./img/unicorn/Shono.jpg" alt="Shinjo Shono" class="recommend__photo">
+              <img src="./img/unicorn/Chagatai.jpg" alt="Moto Chagatai" class="recommend__photo">
+              <img src="./img/unicorn/Kamoko.jpg" alt="Shinjo Utaku Kamoko" class="recommend__photo">
+              <img src="./img/unicorn/Takuya.jpg" alt="Shinjo Takuya" class="recommend__photo">
+            </div>
+          </div>
+
+          <figure class="user-reviews">
+            <figure class="review">
+              <blockquote class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam,
+                itaque officia ex.
+              </blockquote>
+              <figcaption class="review__user">
+                <img src="./img/unicorn/Nergui.jpg" alt="Moto Nergui" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Moto Nergui</p>
+                  <p class="review__user-date">23 Février 2020</p>
+                </div>
+                <div class="review__rating">7.8</div>
+              </figcaption>
+            </figure>
+
+            <figure class="review">
+              <blockquote class="review__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+              </blockquote>
+              <figcaption class="review__user">
+                <img src="./img/unicorn/tetsuko.jpg" alt="Utaku Tetsuko" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Utaku Tetsuko</p>
+                  <p class="review__user-date">13 Décembre 2020</p>
+                </div>
+                <div class="review__rating">9.3</div>
+              </figcaption>
+            </figure>
+
+            <button class="btn-inline">Voir plus <span>&rarr;</span></button>
+          </figure>
+        </div>
+
+        <div class="cta">
+          <h2 class="cta__book-now">
+            Le prochain tournoi est pour bientôt!
+          </h2>
+          <a class="btn btn-cta">En savoir plus</a>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>

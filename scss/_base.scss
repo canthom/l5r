@@ -1,9 +1,5 @@
 // Variables
 :root {
-  // --color-primary: #eb2f64;
-  // --color-primary-light: #ff3366;
-  // --color-primary-dark: #BA265D;
-
   --color-primary: #ed1e24;
   --color-primary-light: #ef353a;
   --color-primary-dark: #be181d;
@@ -17,16 +13,54 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
 
-  --shadow-dark: 0 2rem 6rem rgba(0,0,0,0.3);
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,0.4);
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
 
   --line: 1px solid var(--color-grey-light-2);
 }
+
 $bp-largest: 75em; // 1200px
 $bp-large: 68.75em; // 1100px
 $bp-medium: 56.25em; // 900px
 $bp-small: 37.5em; // 600px
 $bp-smallest: 31.25em; // 500px
+
+// Categories
+.category-ressources {
+  background-color: #2d6cdf;
+  color: #fff;
+}
+
+.category-info {
+  background-color:#f3cf7a;
+  color: #000;
+}
+
+.category-tourney {
+  background-color: #574b90;
+  color: #fff;
+}
+
+.category-fictions {
+  background-color:#2cb978;
+  color: #fff;
+}
+
+.category-lcg {
+  background-color: #575151;
+  color: #fff;
+}
+
+.category-rpg {
+  background-color:var(--color-primary);
+  color: #fff;
+}
+
+.category-divers {
+  background-color: #c94e4e;
+  color: #fff;
+}
+
 
 // Reset
 * {
@@ -51,7 +85,7 @@ html {
 
 // Globals
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-grey-dark-2);
@@ -60,4 +94,17 @@ body {
   background-repeat: no-repeat;
 
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-grey-dark-2);
+
+  a:hover {
+    color: var(--color-primary);
+  }
+}
+
+ul {
+  list-style: none;
 }

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- Links -->
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.min.css" />
 
   <!-- Title -->
@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="index.html"><img src="./img/logo.png" alt="Trillo Logo" class="logo" /></a>
+      <a href="index.html" class="logo">This is a Test</a>
 
       <form action="#" class="search">
         <input type="text" class="search__input" placeholder="Rechercher" />
@@ -70,7 +70,7 @@
             </a>
           </li>
           <li class="side-nav__item">
-            <a href="#" class="side-nav__link">
+            <a href="sample.html" class="side-nav__link">
               <svg class="side-nav__icon">
                 <use xlink:href="img/sprite.svg#icon-documents"></use>
               </svg>
@@ -96,110 +96,117 @@
         </ul>
 
         <div class="legal">
-          <p>&copy; 2020 par Toma.dev</p>
+          <p>&copy; 2020 par <strong>Toma.dev</strong></p>
           <p>Tous droits réservés.</p>
         </div>
       </nav>
 
       <main class="hotel-view">
-        <!-- Gallery -->
-        <div class="gallery">
-          <figure class="gallery__item">
-            <img src="./img/unicorn/1. Golden Plains Outpost.jpg" alt="GPO" class="gallery__photo">
-          </figure>
-          <figure class="gallery__item">
-            <img src="./img/unicorn/2. Hisu Mori Toride.jpg" alt="HMT" class="gallery__photo">
-          </figure>
-          <figure class="gallery__item">
-            <img src="./img/unicorn/3. Shiro Shinjo.jpg" alt="Shiro Shinjo" class="gallery__photo">
-          </figure>
+        <!-- Showcase -->
+        <div class="showcase">
+          <div class="showcase__text-box">
+            <h1>Ombres Rampantes est disponible !</h1>
+            <h2>Découvrez la nouvelle forteresse scorpionne, le Fort des Sept Dards.</h2>
+            <a class="btn btn-cta">En savoir plus</a>
+
+
+          </div>
         </div>
 
         <!-- Overview -->
         <div class="overview">
-          <h1 class="overview__heading">Clan de la Licorne</h1>
-          <div class="overview__stars">
-            <svg class="overview__icon-star">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="overview__icon-star">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="overview__icon-star">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="overview__icon-star">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-            <svg class="overview__icon-star">
-              <use xlink:href="img/sprite.svg#icon-star"></use>
-            </svg>
-          </div>
-
-          <div class="overview__location">
-            <svg class="overview__icon-location">
-              <use xlink:href="img/sprite.svg#icon-location-pin"></use>
-            </svg>
-            <button class="btn-inline">Rokugan</button>
-          </div>
-
-          <div class="overview__rating">
-            <div class="overview__rating-average">8.6</div>
-            <div class="overview__rating-count">429 votes</div>
-          </div>
+          <h1 class="overview__heading">Dernières actualités</h1>
         </div>
 
         <div class="detail">
           <div class="description">
-            <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis ratione sapiente
-              saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate.
-            </p>
-            <p class="paragraph">
-              Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure
-              aliquid aliquam.
-            </p>
-            <ul class="list">
-              <li class="list__item">Close to the beach</li>
-              <li class="list__item">Breakfast included</li>
-              <li class="list__item">Free airport shuttle</li>
-              <li class="list__item">Free wifi in all rooms</li>
-              <li class="list__item">Air conditioning and heating</li>
-              <li class="list__item">Pets allowed</li>
-              <li class="list__item">We speak all languages</li>
-              <li class="list__item">Perfect for families</li>
+            <ul class="news">
+              <li class="news__article">
+                <a href="#" class="news__article-title">La Demeure Abandonnée, un scénario de Flex</a>
+                <a class="news__article-category category-ressources">Ressources</a>
+                <div class="news__article-info">
+                  <p class="news__article-info-author"><a href="#">Halion</a></p>
+                  <p class="news__article-info-date">12 décembre 2020</p>
+                  <a href="#" class="news__article-info-discuss">Commentaires</a>
+                </div>
+              </li>
+              <li class="news__article">
+                <a href="#" class="news__article-title">Replay de la soirée avec Edge Studio</a>
+                <a class="news__article-category category-divers">Divers</a>
+                <div class="news__article-info">
+                  <p class="news__article-info-author"><a href="#">Halion</a></p>
+                  <p class="news__article-info-date">12 décembre 2020</p>
+                  <a href="#" class="news__article-info-discuss">Commentaires</a>
+                </div>
+              </li>
+              <li class="news__article">
+                <a href="#" class="news__article-title">Introduction du Clan du Cerf</a>
+                <a class="news__article-category category-info">Informations</a>
+                <div class="news__article-info">
+                  <p class="news__article-info-author"><a href="#">Halion</a></p>
+                  <p class="news__article-info-date">10 décembre 2020</p>
+                  <a href="#" class="news__article-info-discuss">Commentaires</a>
+                </div>
+              </li>
+              <li class="news__article">
+                <a href="#" class="news__article-title">Micha, vainqueur du Tournoi d'Ivoire</a>
+                <a class="news__article-category category-tourney">Tournois</a>
+                <div class="news__article-info">
+                  <p class="news__article-info-author"><a href="#">Halion</a></p>
+                  <p class="news__article-info-date">9 décembre 2020</p>
+                  <a href="#" class="news__article-info-discuss">Commentaires</a>
+                </div>
+              </li>
+              <li class="news__article">
+                <a href="#" class="news__article-title">Nouvelles infos sur les jeux de cour</a>
+                <a class="news__article-category category-info">Informations</a>
+                <div class="news__article-info">
+                  <p class="news__article-info-author"><a href="#">Halion</a></p>
+                  <p class="news__article-info-date">6 décembre 2020</p>
+                  <a href="#" class="news__article-info-discuss">Commentaires</a>
+                </div>
+              </li>
             </ul>
-
-            <div class="recommend">
-              <p class="recommend__count">
-                Shono et 3 autres amis recommandent ce clan.
-              </p>
-              <img src="./img/unicorn/Shono.jpg" alt="Shinjo Shono" class="recommend__photo">
-              <img src="./img/unicorn/Chagatai.jpg" alt="Moto Chagatai" class="recommend__photo">
-              <img src="./img/unicorn/Kamoko.jpg" alt="Shinjo Utaku Kamoko" class="recommend__photo">
-              <img src="./img/unicorn/Takuya.jpg" alt="Shinjo Takuya" class="recommend__photo">
-            </div>
+            <ul class="news-pages">
+              <li class="page-active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>...</li>
+              <li><a href="#">Suivant ></a></li>
+              <li><a href="#">Dernier »</a></li>
+            </ul>
           </div>
 
           <figure class="user-reviews">
-            <figure class="review">
-              <blockquote class="review__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi, totam,
-                itaque officia ex.
-              </blockquote>
-              <figcaption class="review__user">
-                <img src="./img/unicorn/Nergui.jpg" alt="Moto Nergui" class="review__photo">
-                <div class="review__user-box">
-                  <p class="review__user-name">Moto Nergui</p>
-                  <p class="review__user-date">23 Février 2020</p>
-                </div>
-                <div class="review__rating">7.8</div>
-              </figcaption>
-            </figure>
+            <div class="planning">
+              <h4>Prochaines Sorties</h4>
+              <ul class="planning__list">
+                <li class="planning__list-item">
+                  <a href="#"><span class="planning__list-item-date">2020</span>
+                    <span class="planning__list-item-title">Pack 3 - Cycle 5</span></a>
+                </li>
+                <li class="planning__list-item">
+                  <a href="#"><span class="planning__list-item-date">2021</span>
+                    <span class="planning__list-item-title">Pack 4 - Cycle 5</span></a>
+                </li>
+                <li class="planning__list-item">
+                  <a href="#"><span class="planning__list-item-date">2021</span>
+                    <span class="planning__list-item-title">L'Étreinte de l'hiver</span></a>
+                </li>
+                <li class="planning__list-item">
+                  <a href="#"><span class="planning__list-item-date">2021</span>
+                    <span class="planning__list-item-title">Les Cours de Pierre</span></a>
+                </li>
+              </ul>
+            </div>
 
             <figure class="review">
+              <h3>Dernier commentaire</h3>
               <blockquote class="review__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto dicta animi. Lorem
+                ipsum dolor sit amet, consectetur adipisicing.
               </blockquote>
               <figcaption class="review__user">
                 <img src="./img/unicorn/tetsuko.jpg" alt="Utaku Tetsuko" class="review__photo">
@@ -207,22 +214,19 @@
                   <p class="review__user-name">Utaku Tetsuko</p>
                   <p class="review__user-date">13 Décembre 2020</p>
                 </div>
-                <div class="review__rating">9.3</div>
+                <div class="review__rating">Il y a 3h</div>
               </figcaption>
+              <button class="btn-inline">Lire le commentaire <span>&rarr;</span></button>
             </figure>
 
-            <button class="btn-inline">Voir plus <span>&rarr;</span></button>
           </figure>
         </div>
 
         <div class="cta">
           <h2 class="cta__book-now">
-            Good news! We have 4 free rooms for your selected dates!
+            Le prochain tournoi est pour bientôt!
           </h2>
-          <button class="btn">
-            <span class="btn__visible">Book Now</span>
-            <span class="btn__invisible">Only 4 rooms left</span>
-          </button>
+          <a class="btn btn-cta">En savoir plus</a>
         </div>
       </main>
     </div>
