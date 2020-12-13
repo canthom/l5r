@@ -328,7 +328,7 @@
   display: inline-block;
   background-color: transparent;
   cursor: pointer;
-  transition: transform .2s;
+  transition: all .2s;
 
   & span {
     margin-left: 3px;
@@ -552,6 +552,7 @@
   border: none;
   border-radius: 100px;
   transition: all .2s;
+  transform: translateY(10px);
   position: relative;
   cursor: pointer;
 
