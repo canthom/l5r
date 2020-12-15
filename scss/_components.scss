@@ -252,7 +252,7 @@
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
 
     @media only screen and (max-width: $bp-small) {
       font-size: 1.8rem;
@@ -527,11 +527,11 @@
 ////////////////////////////////////
 // Call to Action
 .cta {
-  padding: 3rem 0;
+  padding: 2rem 0;
   text-align: center;
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 2.5rem 1rem;
+    padding: 2rem 1rem;
   }
 
   &__book-now {
