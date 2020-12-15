@@ -146,6 +146,7 @@
 
     @media only screen and (max-width: $bp-medium) {
       flex: 1;
+      text-align: center;
     }
   }
 
@@ -530,7 +531,7 @@
   text-align: center;
 
   @media only screen and (max-width: $bp-medium) {
-    padding: 2.5rem 0;
+    padding: 2.5rem 1rem;
   }
 
   &__book-now {
@@ -552,7 +553,6 @@
   border: none;
   border-radius: 100px;
   transition: all .2s;
-  transform: translateY(10px);
   position: relative;
   cursor: pointer;
 
@@ -624,6 +624,10 @@
     align-items: start;
     justify-content: space-between;
 
+    @media only screen and (max-width: $bp-smallest) {
+      left: 4rem;
+    }
+
     h1 {
       font-size: 3rem;
     }
@@ -648,12 +652,15 @@
     flex-wrap: wrap;
     margin-bottom: 3.5rem;
 
-
     &-title {
       flex: 0 0 77.5%;
       font-weight: 400;
       font-size: 1.6rem;
       color: #000;
+
+      @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.4rem;
+      }
     }
 
     &-title:hover,
@@ -673,6 +680,10 @@
 
       &:hover {
         opacity: 0.8;
+      }
+
+      @media only screen and (max-width: $bp-smallest) {
+        display: none;
       }
     }
 
@@ -695,6 +706,13 @@
 .news-pages {
   display: inline-flex;
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-smallest) {
+    li:nth-of-type(4),
+    li:nth-of-type(5) {
+      display: none;
+    }
+  }
 
   li {
     &:hover a {
@@ -768,5 +786,9 @@
         }
       }
     }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    align-items: center;
   }
 }
